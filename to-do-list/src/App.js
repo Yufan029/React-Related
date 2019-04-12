@@ -38,10 +38,10 @@ class App extends Component {
   render() {
     return (
       <div className="App container">
-        <nav className="nav-wrapper center red">
+        <nav className="nav-wrapper center">
           <h4>Todo's</h4>
         </nav>
-        <Todos todos={this.state.todos} ClickToDelete={this.ClickToDelete}/>
+        <Todos todos={this.state.todos} ClickToDelete={this.ClickToDelete} />
         <br />
         <AddTodo AddNewTodo={this.AddNewTodo}/>
       </div>
