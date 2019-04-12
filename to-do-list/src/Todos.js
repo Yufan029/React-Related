@@ -10,6 +10,7 @@ const Todos = ({ todos, ClickToDelete }) => {
                     key={todo.id}
                     onClick={() => ClickToDelete(todo.id)}
                 >
+                    <i className="material-icons primary right">delete_forever</i>
                     {todo.content}
                 </div>
             );
