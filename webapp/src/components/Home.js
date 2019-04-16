@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom'
+import headpicture from '../header.PNG'
 
 class Home extends Component {
     state = {
@@ -20,19 +22,22 @@ class Home extends Component {
         const cards = posts.length ? (
             posts.map(post => {
                 return (
-                    <div className="card" key={post.id}>
+                    <div className="post card" key={post.id}>
+                        <img src={headpicture} alt="Eric's picture" />
                         <div className="card-content">
-                            <span className="card-title">{post.title}</span>
+                            <Link to={'/' + post.id}>
+                                <span className="card-title ">{post.title}</span>
+                            </Link>
                             <p>{post.body}</p>
                         </div>
                     </div>)
             })
-            ) : (
+        ) : (
                 <div className="center">No more posts yet.</div>
             );
 
         return (
-            <div className="container">
+            <div className="home container">
                 <h4 className="center">Home</h4>
                 {cards}
             </div>

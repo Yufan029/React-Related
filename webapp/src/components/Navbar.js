@@ -13,6 +13,8 @@ const Navbar = (props) => {
     //     props.history.push('/about');
     // }, 2000);
 
+    // NavLink has the active class
+    
     return (
         <nav className="nav-wrapper red darken-3">
             <div className="container">
