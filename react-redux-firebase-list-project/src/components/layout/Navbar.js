@@ -11,7 +11,6 @@ function Navbar() {
                 <SignedInLinks />
                 <SignedOutLinks />
             </div>
-
         </nav>
     )
 }
