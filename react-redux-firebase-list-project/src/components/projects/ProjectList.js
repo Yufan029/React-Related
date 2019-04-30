@@ -1,16 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
+import ProjectSummary from './ProjectSummary';
 
 function ProjectList() {
     return (
         <div className="section project-list">
-            <div className="card project-summary">
-                <div className="card-content grey-text text-darden-3">
-                    <span className="card-title">Project Title</span>
-                    <div className="divider"></div>
-                    <p>Card content</p>
-                    <p>Second paragraph</p>
-                </div>
-            </div>
+            <ProjectSummary />
+            <ProjectSummary />
+            <ProjectSummary />
         </div>
     );
 }
