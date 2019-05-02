@@ -20,8 +20,8 @@ export default class CreateProject extends Component {
     render() {
         return (
             <div className="container section create-project">
-                <h5 className="grey-text lighten-1 center">Create a New Project</h5>
                 <form onSubmit={this.handleSubmit}>
+                    <h5 className="grey-text lighten-1 center">Create a New Project</h5>
                     <div className="input-field">
                         <i className="material-icons prefix grey-text lighten-1">title</i>
                         <label htmlFor="title">Project Title</label>

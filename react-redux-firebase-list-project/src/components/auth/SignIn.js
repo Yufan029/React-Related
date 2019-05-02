@@ -20,8 +20,8 @@ export default class SignIn extends Component {
     render() {
         return (
             <div className="container sign-in section">
-                <h5 className="grey-text text-darken-2 center">Sign In</h5>
                 <form onSubmit={this.handleSubmit}>
+                    <h5 className="grey-text text-darken-2 center">Sign In</h5>
                     <div className="input-field">
                         <i className="material-icons prefix grey-text text-lighten-1">email</i>
                         <label htmlFor="email">Email</label>
