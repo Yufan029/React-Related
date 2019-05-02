@@ -1,9 +1,7 @@
 import React from 'react';
 import ProjectSummary from './ProjectSummary';
-import { connect } from 'react-redux';
 
-function ProjectList(props) {
-    const { projects } = props;
+function ProjectList({projects}) {
     return (
         <div className="section project-list">
             {
@@ -17,10 +15,4 @@ function ProjectList(props) {
     );
 }
 
-const mapStateToProps = (state) => {
-    return {
-        projects: state.project.projects
-    }
-}
-
-export default connect(mapStateToProps)(ProjectList)
+export default ProjectList
